@@ -26,13 +26,9 @@
             var idx = Math.floor(Math.random() * (cores.length+1));
             coresRandom.push(cores[idx]);
         }
-        
 
         var idx = Math.floor(Math.random() * 11);
-
         corSolucao = coresRandom[idx]
-        alert(corSolucao)
-        
         var vidas = 10 
 
         do{
@@ -46,7 +42,8 @@
 
         if(vidas>0){
             document.getElementById("container").style.backgroundColor = corSolucao;
-            alert("Parabens, você venceu!!! \nrecarregue seu navegador e vamos jogar novamente!!!")
+            document.getElementById("container").textContent = "Parabéns, você venceu!!! \nrecarregue seu navegador e vamos jogar novamente!!!"
+            
         }else{
             alert("Que pena, não foi dessa vez.\nnão fique triste, recarregue seu navegador e tente novamente!!")
         }
